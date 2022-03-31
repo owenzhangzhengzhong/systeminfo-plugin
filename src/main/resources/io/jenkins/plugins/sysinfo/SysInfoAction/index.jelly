@@ -1,0 +1,25 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:st="jelly:stapler">
+
+    <l:layout title="Greeting">
+        <l:side-panel> 
+            <st:include page="sidepanel.jelly" optional="true" /> 
+        <l:tasks>
+      	<l:task icon="up.png" href="${rootURL}/computer/${it.getName()}" title="${%Back to Jenkins}" />
+      	</l:tasks>
+
+
+
+        </l:side-panel>
+        <l:main-panel>
+            <h1> 
+                Namess: ${it.getName()} 
+            </h1>
+                
+            <div>
+                ${it.getDescription()}
+            </div>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>
+
