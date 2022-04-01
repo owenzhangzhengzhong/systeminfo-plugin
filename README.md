@@ -18,6 +18,8 @@ After install, it will appear in the computer/nodename/ page:
 Appearing in the sidebar as System Info
 It will process the contents of Description in Configure panel, and double spaces '  ' will be line seperated
 
+mvn install to build
+
 ## Issues
 
 Report issues and enhancements in the [Jenkins issue tracker](https://issues.jenkins-ci.org/).
