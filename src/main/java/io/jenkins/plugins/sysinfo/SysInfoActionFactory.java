@@ -43,5 +43,4 @@ public class SysInfoActionFactory extends TransientComputerActionFactory{
         result.add(new SysInfoAction(target));
         return result;
     }
-    
 }

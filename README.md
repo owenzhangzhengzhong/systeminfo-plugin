@@ -2,12 +2,21 @@
 
 ## Introduction
 
-TODO Describe what your plugin does here
+This plugin adds a System info page:
+[Image](images/sysinfopage.PNG)
+
+Which formats the computer description:
+[Image](images/configpage.md)
+
+Allowing for a better display of description
 
 ## Getting started
 
-TODO Tell users how to configure your plugin here, include screenshots, pipeline examples and 
-configuration-as-code examples.
+After install, it will appear in the computer/nodename/ page:
+[Image](images/mainpage.md)
+
+Appearing in the sidebar as System Info
+It will process the contents of Description in Configure panel, and double spaces '  ' will be line seperated
 
 ## Issues
 
@@ -19,8 +28,6 @@ Report issues and enhancements in the [Jenkins issue tracker](https://issues.jen
 ## Contributing
 
 TODO review the default [CONTRIBUTING](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md) file and make sure it is appropriate for your plugin, if not then add your own one adapted from the base file
-
-Refer to our [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
 
 ## LICENSE
 

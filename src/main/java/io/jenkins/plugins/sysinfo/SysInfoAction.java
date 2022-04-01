@@ -31,7 +31,8 @@ import hudson.model.Action;
  * @author ozhang
  */
 public class SysInfoAction implements Action {
-    private Computer computerObj;
+    public Computer computerObj;
+    public String[] descriptionArray;
     
     public SysInfoAction(Computer comp) {
         this.computerObj = comp;
@@ -42,7 +43,9 @@ public class SysInfoAction implements Action {
     }
     
     public String getDescription() {
-        return this.computerObj.getDescription();
+        String desc = this.computerObj.getDescription();        
+        this.descriptionArray = desc.split("  ");
+        return desc;
     }
     
     @Override

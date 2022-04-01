@@ -1,25 +1,24 @@
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:st="jelly:stapler">
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:st="jelly:stapler">
 
-    <l:layout title="Greeting">
+    <l:layout title="System Info">
         <l:side-panel> 
-            <st:include page="sidepanel.jelly" optional="true" /> 
-        <l:tasks>
-      	<l:task icon="up.png" href="${rootURL}/computer/${it.getName()}" title="${%Back to Jenkins}" />
-      	</l:tasks>
-
-
-
+            <st:include it="${it.computerObj}" page="sidepanel.jelly"/>
         </l:side-panel>
+
         <l:main-panel>
             <h1> 
-                Namess: ${it.getName()} 
+                System Name: ${it.getName()}
             </h1>
                 
-            <div>
+            <div style="display: none">
                 ${it.getDescription()}
             </div>
+
+            <j:forEach var="descItem" items="${it.descriptionArray}">     
+                <div>${descItem} </div>
+            </j:forEach>
+
         </l:main-panel>
     </l:layout>
 </j:jelly>
-
