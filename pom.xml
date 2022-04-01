@@ -8,7 +8,7 @@
         <relativePath />
     </parent>
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>sysinfo</artifactId>
+    <artifactId>systeminfo</artifactId>
     <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
     <name>System Info Plugin</name>
