@@ -43,9 +43,21 @@ public class SysInfoAction implements Action {
     }
     
     public String getDescription() {
-        String desc = this.computerObj.getDescription();        
-        this.descriptionArray = desc.split("  ");
+        String desc;
+        
+        try{
+            desc = this.computerObj.getNode().getNodeDescription();
+            this.descriptionArray = desc.split("  ");
+        }
+        catch (NullPointerException e){
+            desc = "";
+        }
+
         return desc;
+    }
+    
+    public String[] getDescriptionArray() {
+        return this.descriptionArray;
     }
     
     @Override
