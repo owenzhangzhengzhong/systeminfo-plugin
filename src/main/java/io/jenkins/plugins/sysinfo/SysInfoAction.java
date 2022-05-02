@@ -67,12 +67,12 @@ public class SysInfoAction implements Action {
 
     @Override
     public String getDisplayName() {
-        return "System Info"; 
+        return "System Details";
     }
 
     @Override
     public String getUrlName() {
-        return "sysinfo"; 
+        return "sysdetail";
     }    
 
 }
